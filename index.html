@@ -4,441 +4,368 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LLB FRIEND - Your Law Study Companion. Access LLB syllabus, short notes, previous papers, bare acts, complete notes and case laws.">
+
+    <meta name="description" content="LLB FRIEND - Your Law Study Companion. Access LLB syllabus, previous year question papers, short notes, bare acts, QB answers, complete notes and case laws.">
+
+    <meta name="keywords" content="LLB, Law Study Materials, Bare Acts, Case Laws, Previous Papers, LLB Notes, QB Answers">
+
+    <meta name="author" content="LLB FRIEND">
+
     <title>LLB FRIEND | Your Law Study Companion</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container nav-container">
-            <a href="#home" class="logo">LLB <span>FRIEND</span></a>
+<!-- NAVIGATION -->
+<header class="header">
+    <div class="container navbar">
 
-            <button class="menu-toggle" id="menuToggle"
-                    aria-label="Toggle navigation" aria-expanded="false">
-                ☰
-            </button>
+        <a href="#home" class="logo">
+            LLB <span>FRIEND</span>
+        </a>
 
-            <nav class="nav-links" id="navLinks">
-                <a href="#home">Home</a>
-                <a href="#resources">Study Resources</a>
-                <a href="#qb-answers">QB Answers</a>
-                <a href="#complete-notes">Complete Notes</a>
-                <a href="#case-laws">Case Laws</a>
-                <a href="#about">About</a>
-            </nav>
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#resources">Study Resources</a>
+            <a href="#about">About</a>
+            <a href="https://mvmgayathridevi.github.io/LEGAL-GUIDE-AI/"
+               target="_blank" rel="noopener">Legal Guide AI ↗</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            ⚖️ YOUR LAW STUDY COMPANION
         </div>
-    </header>
 
-    <main>
+        <h1>
+            Learn Law.<br>
+            <span>Understand Justice.</span>
+        </h1>
 
-        <!-- HERO -->
-        <section class="hero" id="home">
-            <div class="container hero-content">
-                <span class="hero-tag">YOUR LAW STUDY COMPANION</span>
+        <p>
+            Your one-stop destination for LLB study materials.
+            Explore syllabus, previous question papers, short notes,
+            bare acts, question bank answers, complete notes and case laws.
+        </p>
 
-                <h1>
-                    Learn Law.<br>
-                    <span>Understand Justice.</span>
-                </h1>
+        <div class="hero-buttons">
+            <a href="#resources" class="btn btn-primary">
+                Explore Study Resources →
+            </a>
+
+            <a href="https://mvmgayathridevi.github.io/LEGAL-GUIDE-AI/"
+               target="_blank" rel="noopener" class="btn btn-outline">
+                Explore Legal Guide AI
+            </a>
+        </div>
+
+        <div class="hero-highlights">
+            <div>
+                <strong>07</strong>
+                <span>Study Resources</span>
+            </div>
+            <div>
+                <strong>LLB</strong>
+                <span>Learning Support</span>
+            </div>
+            <div>
+                <strong>24/7</strong>
+                <span>Online Access</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STUDY RESOURCES -->
+<main>
+
+<section class="resources-section" id="resources">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">YOUR LEARNING LIBRARY</span>
+            <h2>Explore Study Resources</h2>
+            <p>
+                Everything you need for your LLB studies,
+                organized in one place.
+            </p>
+        </div>
+
+        <!-- RESOURCE SEARCH -->
+        <div class="search-container">
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="search"
+                id="resourceSearch"
+                placeholder="Search syllabus, bare acts, notes, case laws..."
+                aria-label="Search study resources"
+            >
+        </div>
+
+        <div class="resource-count" id="resourceCount">
+            7 Study Resources
+        </div>
+
+
+        <!-- RESOURCE CARDS -->
+        <div class="resource-grid" id="resourceGrid">
+
+            <!-- 1. SYLLABUS -->
+            <article class="resource-card" data-search="syllabus curriculum subjects course">
+                <div class="resource-icon">📚</div>
+                <span class="resource-number">01</span>
+
+                <h3>LLB Syllabus</h3>
 
                 <p>
-                    Your learning partner for LLB studies. Access study materials,
-                    previous question papers, notes, case laws and useful legal
-                    resources in one place.
+                    Access your LLB curriculum, semester-wise syllabus
+                    and subject details.
                 </p>
 
-                <a href="#resources" class="primary-btn">
-                    Explore Study Resources →
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-PREVIOUS-YEARS-PAPERS/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Explore Syllabus →
                 </a>
-            </div>
-        </section>
+            </article>
 
-        <!-- STUDY RESOURCES -->
-        <section class="section" id="resources">
-            <div class="container">
 
-                <div class="section-heading">
-                    <span class="eyebrow">LEARN • PRACTICE • GROW</span>
-                    <h2>Study Resources</h2>
-                    <p>Everything you need to make your LLB learning easier.</p>
-                </div>
+            <!-- 2. PREVIOUS PAPERS -->
+            <article class="resource-card" data-search="previous years question papers old papers exams">
+                <div class="resource-icon">📝</div>
+                <span class="resource-number">02</span>
 
-                <div class="resource-grid">
+                <h3>Previous Years Papers</h3>
 
-                    <!-- BARE ACTS -->
-                    <article class="resource-card">
-                        <div class="resource-icon">⚖️</div>
-                        <h3>Bare Acts</h3>
-                        <p>
-                            Explore important Acts and legal provisions
-                            for your studies.
-                        </p>
-                        <a class="card-link"
-                           href="https://mvmgayathridevi.github.io/LLB-FRIEND-BARE-ACTS/">
-                            Explore Bare Acts <span>→</span>
-                        </a>
-                    </article>
+                <p>
+                    Prepare for examinations with previous years'
+                    question papers.
+                </p>
 
-                    <!-- PREVIOUS PAPERS -->
-                    <article class="resource-card">
-                        <div class="resource-icon">📝</div>
-                        <h3>Previous Years Papers & Syllabus</h3>
-                        <p>
-                            Prepare effectively using previous question
-                            papers and syllabus.
-                        </p>
-                        <a class="card-link"
-                           href="https://mvmgayathridevi.github.io/LLB-FRIEND-PREVIOUS-YEARS-PAPERS/">
-                            Explore Papers <span>→</span>
-                        </a>
-                    </article>
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-PREVIOUS-YEARS-PAPERS/"
+                   target="_blank" rel="noopener" class="card-link">
+                    View Question Papers →
+                </a>
+            </article>
 
-                    <!-- SHORT NOTES -->
-                    <article class="resource-card">
-                        <div class="resource-icon">📖</div>
-                        <h3>Short Notes</h3>
-                        <p>
-                            Quick revision materials for important
-                            LLB subjects.
-                        </p>
-                        <a class="card-link"
-                           href="https://mvmgayathridevi.github.io/LLB-FRIEND-SHORT-NOTES/">
-                            Explore Short Notes <span>→</span>
-                        </a>
-                    </article>
 
-                    <!-- QB ANSWERS -->
-                    <article class="resource-card highlight-card">
-                        <div class="resource-icon">✍️</div>
-                        <h3>QB Answers</h3>
-                        <p>
-                            Subject-wise answers to previous
-                            question papers.
-                        </p>
-                        <button class="card-link button-link"
-                                id="toggleAnswers"
-                                aria-expanded="false"
-                                aria-controls="qb-answers">
-                            View QB Answers <span>→</span>
-                        </button>
-                    </article>
+            <!-- 3. SHORT NOTES -->
+            <article class="resource-card" data-search="short notes quick revision summaries">
+                <div class="resource-icon">📖</div>
+                <span class="resource-number">03</span>
 
-                    <!-- COMPLETE NOTES -->
-                    <article class="resource-card highlight-card">
-                        <div class="resource-icon">📚</div>
-                        <h3>Complete Notes</h3>
-                        <p>
-                            Access detailed subject-wise notes
-                            for your LLB examinations.
-                        </p>
-                        <button class="card-link button-link"
-                                id="toggleCompleteNotes"
-                                aria-expanded="false"
-                                aria-controls="complete-notes">
-                            View Complete Notes <span>→</span>
-                        </button>
-                    </article>
+                <h3>Short Notes</h3>
 
-                    <!-- CASE LAWS -->
-                    <article class="resource-card highlight-card">
-                        <div class="resource-icon">⚖️</div>
-                        <h3>Case Laws</h3>
-                        <p>
-                            Explore important landmark judgments
-                            and subject-wise case laws.
-                        </p>
-                        <button class="card-link button-link"
-                                id="toggleCaseLaws"
-                                aria-expanded="false"
-                                aria-controls="case-laws">
-                            View Case Laws <span>→</span>
-                        </button>
-                    </article>
+                <p>
+                    Revise important legal concepts with subject-wise
+                    short notes.
+                </p>
 
-                </div>
-            </div>
-        </section>
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-SHORT-NOTES/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Read Short Notes →
+                </a>
+            </article>
 
-        <!-- QB ANSWERS -->
-        <section class="section pdf-section" id="qb-answers" hidden>
-            <div class="container">
 
-                <div class="section-heading">
-                    <span class="eyebrow">QUESTION BANK PREPARATION</span>
-                    <h2>Previous Papers – QB Answers</h2>
-                    <p>Select a subject to read or download its PDF.</p>
-                </div>
+            <!-- 4. BARE ACTS -->
+            <article class="resource-card" data-search="bare acts legislation laws statutes sections">
+                <div class="resource-icon">⚖️</div>
+                <span class="resource-number">04</span>
 
-                <div class="pdf-grid">
+                <h3>Bare Acts</h3>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📄</div>
-                        <h3>Constitutional Law – I</h3>
-                        <p>Previous Papers QB Answers</p>
-                        <a class="download-btn"
-                           href="PDFs/Previous%20years%20papers%20%20Answers/Constitutional_Law_I_Previous_Papers_QB_Answers.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <p>
+                    Study important acts, statutory provisions,
+                    sections and legal rules.
+                </p>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📄</div>
-                        <h3>Cyber Law</h3>
-                        <p>Previous Papers QB Answers</p>
-                        <a class="download-btn"
-                           href="PDFs/Previous%20years%20papers%20%20Answers/Cyber_Law_Previous_Papers_QB_Answers.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-BARE-ACTS/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Explore Bare Acts →
+                </a>
+            </article>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📄</div>
-                        <h3>Family Law – I</h3>
-                        <p>Previous Papers QB Answers</p>
-                        <a class="download-btn"
-                           href="PDFs/Previous%20years%20papers%20%20Answers/Family_Law_I_Previous_Papers_QB_Answers.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📄</div>
-                        <h3>Law of Contract – I</h3>
-                        <p>Previous Papers QB Answers</p>
-                        <a class="download-btn"
-                           href="PDFs/Previous%20years%20papers%20%20Answers/Law_of_Contract_I_Previous_Papers_QB_Answers.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+            <!-- 5. QB ANSWERS -->
+            <article class="resource-card" data-search="question bank qb answers important questions">
+                <div class="resource-icon">✍️</div>
+                <span class="resource-number">05</span>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📄</div>
-                        <h3>Law of Torts</h3>
-                        <p>Previous Papers QB Answers</p>
-                        <a class="download-btn"
-                           href="PDFs/Previous%20years%20papers%20%20Answers/Law_of_Torts_Previous_Papers_QB_Answers.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <h3>QB Answers</h3>
 
-                </div>
-            </div>
-        </section>
+                <p>
+                    Access subject-wise question bank answers
+                    for examination preparation.
+                </p>
 
-        <!-- COMPLETE NOTES -->
-        <section class="section pdf-section" id="complete-notes" hidden>
-            <div class="container">
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-QB-ANSWERS/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Explore QB Answers →
+                </a>
+            </article>
 
-                <div class="section-heading">
-                    <span class="eyebrow">DETAILED STUDY MATERIAL</span>
-                    <h2>Complete Subject Notes</h2>
-                    <p>Read and download detailed notes for each subject.</p>
-                </div>
 
-                <div class="pdf-grid">
+            <!-- 6. COMPLETE NOTES -->
+            <article class="resource-card" data-search="complete notes detailed study material">
+                <div class="resource-icon">📘</div>
+                <span class="resource-number">06</span>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📚</div>
-                        <h3>Contracts Law – I</h3>
-                        <p>Complete Subject Notes</p>
-                        <a class="download-btn"
-                           href="PDFs/Complete%20Notes/Contracts%20Law-1%20complete%20notes.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <h3>Complete Notes</h3>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📚</div>
-                        <h3>Constitutional Law – I</h3>
-                        <p>Complete Subject Notes</p>
-                        <a class="download-btn"
-                           href="PDFs/Complete%20Notes/Constitution%20Law-1%20complete%20notes.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <p>
+                    Learn legal subjects through comprehensive
+                    and detailed study notes.
+                </p>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📚</div>
-                        <h3>Family Law – I</h3>
-                        <p>Complete Subject Notes</p>
-                        <a class="download-btn"
-                           href="PDFs/Complete%20Notes/Family%20Law-1%20complete%20notes.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-COMPLETE-NOTES/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Read Complete Notes →
+                </a>
+            </article>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📚</div>
-                        <h3>Law of Torts</h3>
-                        <p>Complete Subject Notes</p>
-                        <a class="download-btn"
-                           href="PDFs/Complete%20Notes/Law%20of%20Torts%20complete%20notes.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">📚</div>
-                        <h3>Cyber Law</h3>
-                        <p>Complete Subject Notes</p>
-                        <a class="download-btn"
-                           href="PDFs/Complete%20Notes/Cyber%20Law%20complete%20notes.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+            <!-- 7. CASE LAWS -->
+            <article class="resource-card" data-search="case laws landmark judgments supreme court decisions">
+                <div class="resource-icon">🏛️</div>
+                <span class="resource-number">07</span>
 
-                </div>
-            </div>
-        </section>
+                <h3>Case Laws</h3>
 
-        <!-- CASE LAWS -->
-        <section class="section pdf-section" id="case-laws" hidden>
-            <div class="container">
+                <p>
+                    Explore landmark judgments and important
+                    judicial decisions.
+                </p>
 
-                <div class="section-heading">
-                    <span class="eyebrow">IMPORTANT JUDGMENTS</span>
-                    <h2>Subject-wise Case Laws</h2>
-                    <p>
-                        Read and download important case laws
-                        for your LLB subjects.
-                    </p>
-                </div>
+                <a href="https://mvmgayathridevi.github.io/LLB-FRIEND-CASE-LAWS/"
+                   target="_blank" rel="noopener" class="card-link">
+                    Explore Case Laws →
+                </a>
+            </article>
 
-                <div class="pdf-grid">
+        </div>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">⚖️</div>
-                        <h3>Contract Law – I</h3>
-                        <p>Important Case Laws</p>
-                        <a class="download-btn"
-                           href="PDFs/Case%20Laws/Contract%20Law-1%20Caselaws.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+        <div class="no-results" id="noResults" hidden>
+            <h3>No resources found</h3>
+            <p>Try searching with another keyword.</p>
+        </div>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">⚖️</div>
-                        <h3>Family Law – I</h3>
-                        <p>Important Case Laws</p>
-                        <a class="download-btn"
-                           href="PDFs/Case%20Laws/Family%20Law-1%20Caselaws.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+    </div>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">⚖️</div>
-                        <h3>Constitutional Law – I</h3>
-                        <p>Important Case Laws</p>
-                        <a class="download-btn"
-                           href="PDFs/Case%20Laws/Constitutional%20Law-1%20Caselaws.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+</section>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">⚖️</div>
-                        <h3>Law of Torts</h3>
-                        <p>Important Case Laws</p>
-                        <a class="download-btn"
-                           href="PDFs/Case%20Laws/Law%20of%20Torts%20Caselaws.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
 
-                    <article class="pdf-card">
-                        <div class="pdf-icon">⚖️</div>
-                        <h3>Cyber Law</h3>
-                        <p>Important Case Laws</p>
-                        <a class="download-btn"
-                           href="PDFs/Case%20Laws/Cyber%20Law%20Caselaws.pdf"
-                           target="_blank" rel="noopener">
-                            Read / Download PDF ↗
-                        </a>
-                    </article>
+<!-- LEGAL GUIDE AI -->
+<section class="ai-section">
+    <div class="container">
 
-                </div>
-            </div>
-        </section>
+        <div class="ai-card">
 
-        <!-- LEGAL GUIDE AI -->
-        <section class="ai-section">
-            <div class="container ai-content">
+            <div class="ai-icon">🤖</div>
 
-                <div>
-                    <span class="eyebrow">SMART LEGAL LEARNING</span>
-                    <h2>Need Help Understanding the Law?</h2>
-                    <p>
-                        Explore Legal Guide AI to understand legal concepts,
-                        provisions and case-related information.
-                    </p>
-                </div>
+            <div class="ai-content">
+                <span class="section-tag">SMART LEGAL ASSISTANCE</span>
+
+                <h2>Meet Legal Guide AI</h2>
+
+                <p>
+                    Explore an AI-powered legal guidance platform
+                    to understand legal concepts, explore relevant
+                    legal provisions and learn about judgments.
+                </p>
 
                 <a href="https://mvmgayathridevi.github.io/LEGAL-GUIDE-AI/"
-                   target="_blank" rel="noopener"
-                   class="primary-btn">
-                    Explore Legal Guide AI →
+                   target="_blank" rel="noopener" class="btn btn-primary">
+                    Visit Legal Guide AI →
                 </a>
-
             </div>
-        </section>
 
-        <!-- ABOUT -->
-        <section class="section about-section" id="about">
-            <div class="container about-content">
+        </div>
 
-                <span class="eyebrow">ABOUT US</span>
-                <h2>Welcome to LLB FRIEND</h2>
+    </div>
+</section>
 
-                <p>
-                    LLB FRIEND is a student-focused learning platform designed
-                    to make law education more accessible and organised.
-                    Our aim is to bring useful study resources together so
-                    students can learn, revise and prepare with confidence.
-                </p>
 
-                <p class="about-tagline">
-                    Learn Together. Grow Together. Understand Justice.
-                </p>
+<!-- ABOUT -->
+<section class="about-section" id="about">
 
-            </div>
-        </section>
+    <div class="container about-content">
 
-    </main>
+        <span class="section-tag">ABOUT US</span>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
+        <h2>About LLB FRIEND</h2>
 
+        <p>
+            LLB FRIEND is an online learning platform designed
+            to support law students by bringing useful academic
+            resources together in one place.
+        </p>
+
+        <p>
+            Our goal is to make legal education resources easier
+            to access, explore and understand.
+        </p>
+
+        <div class="about-quote">
+            "Learn Law. Understand Justice."
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <div>
             <a href="#home" class="footer-logo">
                 LLB <span>FRIEND</span>
             </a>
 
             <p>Your Law Study Companion.</p>
-
-            <p class="copyright">
-                © <span id="year"></span> LLB FRIEND. All Rights Reserved.
-            </p>
-
+            <p>Learn Law. Understand Justice.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#resources">Study Resources</a>
+            <a href="#about">About</a>
+            <a href="https://mvmgayathridevi.github.io/LEGAL-GUIDE-AI/"
+               target="_blank" rel="noopener">Legal Guide AI</a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>© <span id="currentYear">2026</span> LLB FRIEND. All Rights Reserved.</p>
+        <p>Made for Law Learners ⚖️</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
