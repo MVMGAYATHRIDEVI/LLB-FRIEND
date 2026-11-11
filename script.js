@@ -1,94 +1,69 @@
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-    // Update footer year
-    const yearElement = document.getElementById("year");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-    // Mobile navigation
+    // MOBILE NAVIGATION
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
 
-    if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = navLinks.classList.toggle("active");
 
-        menuToggle.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
 
-            const isOpen = navLinks.classList.toggle("open");
-
-            menuToggle.setAttribute("aria-expanded", String(isOpen));
-            menuToggle.textContent = isOpen ? "✕" : "☰";
+    // CLOSE MOBILE MENU AFTER CLICKING A LINK
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.textContent = "☰";
         });
+    });
 
-        navLinks.querySelectorAll("a").forEach(link => {
+    // RESOURCE SEARCH
+    const searchInput = document.getElementById("resourceSearch");
+    const resourceCards = document.querySelectorAll(".resource-card");
+    const resourceCount = document.getElementById("resourceCount");
+    const noResults = document.getElementById("noResults");
 
-            link.addEventListener("click", () => {
+    function searchResources() {
 
-                navLinks.classList.remove("open");
-                menuToggle.setAttribute("aria-expanded", "false");
-                menuToggle.textContent = "☰";
+        const searchText = searchInput.value
+            .toLowerCase()
+            .trim();
 
-            });
+        let visibleCount = 0;
 
-        });
-    }
+        resourceCards.forEach(card => {
 
-    // Reusable View / Hide section function
-    function setupSectionToggle(buttonId, sectionId, showText, hideText) {
+            const searchableText =
+                (card.dataset.search + " " + card.innerText)
+                .toLowerCase();
 
-        const button = document.getElementById(buttonId);
-        const section = document.getElementById(sectionId);
+            const isMatch = searchableText.includes(searchText);
 
-        if (!button || !section) return;
+            card.style.display = isMatch ? "block" : "none";
 
-        button.addEventListener("click", () => {
-
-            const isHidden = section.hidden;
-
-            section.hidden = !isHidden;
-
-            button.setAttribute("aria-expanded", String(isHidden));
-
-            button.innerHTML = isHidden
-                ? `${hideText} <span>↑</span>`
-                : `${showText} <span>→</span>`;
-
-            if (isHidden) {
-
-                section.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
+            if (isMatch) {
+                visibleCount++;
             }
-
         });
+
+        resourceCount.textContent =
+            `${visibleCount} of ${resourceCards.length} study resources found`;
+
+        noResults.hidden = visibleCount !== 0;
     }
 
-    // QB Answers
-    setupSectionToggle(
-        "toggleAnswers",
-        "qb-answers",
-        "View QB Answers",
-        "Hide QB Answers"
-    );
+    searchInput.addEventListener("input", searchResources);
 
-    // Complete Notes
-    setupSectionToggle(
-        "toggleCompleteNotes",
-        "complete-notes",
-        "View Complete Notes",
-        "Hide Complete Notes"
-    );
+    // INITIAL RESOURCE COUNT
+    resourceCount.textContent =
+        `${resourceCards.length} Study Resources`;
 
-    // Case Laws
-    setupSectionToggle(
-        "toggleCaseLaws",
-        "case-laws",
-        "View Case Laws",
-        "Hide Case Laws"
-    );
+    // CURRENT YEAR
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 
 });
